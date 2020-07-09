@@ -1,7 +1,9 @@
 # an algorith to return change in the form of coins and bills
 
 def make_change(balance_due, payment):
-    """Takes a bill and customer payment and returns a dictionary of cash denominations 
+    """Takes a bill and customer payment and returns a dictionary of:
+            Key: cash denominations 
+            value: quantity of denomination
        to return to the customer
     
     Arguments:
