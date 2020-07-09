@@ -2,8 +2,8 @@
 
 def make_change(balance_due, payment):
     """Takes a bill and customer payment and returns a dictionary of:
-            Key: cash denominations 
-            value: quantity of denomination
+            Keys: cash denominations 
+            values: quantity of denomination
        to return to the customer
     
     Arguments:
