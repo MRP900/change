@@ -1,10 +1,7 @@
 # an algorith to return change in the form of coins and bills
 
 def make_change(balance_due, payment):
-    """Takes a bill and customer payment and returns a dictionary of:
-            Keys: cash denominations 
-            values: quantity of denomination
-       to return to the customer
+    """Takes a bill and customer payment and returns change
     
     Arguments:
         balance_due {[float]} -- [a bill to be paid]
@@ -44,7 +41,6 @@ def make_change(balance_due, payment):
         if k <= balance_due_cust:
             quant = balance_due_cust / k
             balance_due_cust = balance_due_cust % k
-            print(f"{balance_due_cust}")
             change_due[v] = int(quant)
 
     return change_due
