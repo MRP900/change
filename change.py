@@ -22,6 +22,7 @@ def make_change(balance_due, payment):
 
     print(f"Balance Due Customer: {(balance_due_cust / 100)}")
 
+    # keys = denominations in pennies
     money = {
         10000: 'one Hundred dollar bill',
         5000: 'fifty dollar bill',
@@ -41,7 +42,7 @@ def make_change(balance_due, payment):
         if k <= balance_due_cust:
             quant = balance_due_cust / k
             balance_due_cust = balance_due_cust % k
-
+            print(f"{balance_due_cust}")
             change_due[v] = int(quant)
 
     return change_due
