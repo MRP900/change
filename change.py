@@ -1,4 +1,4 @@
-# an algorith to return change in the form of coins and bills
+# an algorithm to return change in the form of coins and bills
 
 def make_change(balance_due, payment):
     """Takes a bill and customer payment and returns change
